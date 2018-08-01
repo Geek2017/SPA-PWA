@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Bicol Idol News</title>
+	<link rel="icon" href="img/icon.png" type="image/png">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+	<link rel='stylesheet prefetch' href='css/res.css'>
+
+	<link rel="stylesheet" href="css/dir.css">
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header>
+
+		<!-- Nav -->
+		<nav id="nav" class="navbar">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="img/logo.png" alt="logo">
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li>
+						<a href="index.html#home">Home</a>
+					</li>
+					<li>
+						<a href="index.html#live">Live
+							<font color="#ef2c25" class="blink"> ( &#10752; )</font>
+						</a>
+					</li>
+					<li>
+						<a href="index.html#news">News</a>
+					</li>
+					<li>
+						<a href="index.html#service">Services</a>
+					</li>
+					<li>
+						<a href="index.html#pricing">Advertise w/ Us</a>
+					</li>
+					<li>
+						<a href="index.html#team">Idols</a>
+					</li>
+					<li>
+						<a href="index.html#about">About</a>
+					</li>
+					<li>
+						<a href="index.html#contact">Contact</a>
+					</li>
+				</ul>
+				<!-- /Main navigation -->
+
+			</div>
+		</nav>
+		<!-- /Nav -->
+
+		<!-- header wrapper -->
+		<!-- <div class="header-wrapper sm-padding bg-grey">
+			<div class="container">
+				<h2>News Name</h2>
+				<ul class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+					<li class="breadcrumb-item"><a href="index.html#blog">Blog</a></li>
+					<li class="breadcrumb-item active">News Name</li>
+				</ul>
+			</div>
+		</div> -->
+		<!-- /header wrapper -->
+
+	</header>
+	<!-- /Header -->
+
+	<!-- Blog -->
+	<div id="blog" class="section md-padding" style="padding-top:0;padding-bottom:0">
+
+		<!-- Container -->
+<!-- Background Image -->
+<!-- <div class="bg-img" style="background-image: url('./img/newbg.jpg');">
+	<div class="overlay"></div>
+</div> -->
+<!-- /Background Image -->
+
+		<!-- Row -->
+		<div class="row">
+
+
+			<body ng-app="newsApp">
+
+				<div ng-controller="newsController as blog">
+					<div class="topbar">
+						<div class="container">
+							<div class="row">
+
+								<div class="offset-s-3 col-s-9" style="width: 78.5%">
+										
+									<nav role='navigation' align="right">
+											
+													
+											
+										<ul>
+												
+												
+											<li>
+												<a href="#" ng-click="blog.selectTab('blog')">News List</a>
+											</li> //
+											<li>
+												<a ng-show="add" href="#" ng-click="blog.selectTab('new')">Add New Post</a>
+												<a ng-show="auth" data-toggle="modal" data-target="#login-modal">Login</a>
+											</li>//
+											<li>
+												<a ng-show="logout" ng-click="sessionend();">LogOut</a>  
+											</li>
+											
+										</ul>
+									<ul>
+											<li>
+													<input type="text" ng-model="searchenews" placeholder="Search.." name="search" style="background-color:white">
+     
+											</li>
+									</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+							<div class="modal-dialog">
+								<div class="loginmodal-container">
+									<h1>Authentication</h1>
+									<br>
+									<form>
+										<input type="text" ng-model="user" placeholder="Username">
+										<input type="password" ng-model="pass" placeholder="Password">
+										<input type="submit" name="login" class="login loginmodal-submit" value="Login" ng-click="logauth();">
+									</form>
+
+									<!-- <div class="login-help">
+										<a href="#">Register</a> -
+										<a href="#">Forgot Password</a>
+									</div> -->
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				
+
+					<div class="content">
+						<div class="container">
+							
+							<div class="row">
+								<ul class="post-grid" ng-show="blog.isSelected('blog')">
+									<li ng-repeat="post in blog.posts|filter:searchenews | startFrom:currentPage*pageSize | limitTo:pageSize" class="col-s-4" ng-class="{ 'reset-s' : $index%3==0 }"
+									    ng-click="blog.selectTab($index);">
+										<span>
+											<img src="{{post.image}}" style=" height:200px;width:300px">
+										</span>
+										<h3>{{post.title | limitTo:20}}. . .</h3>
+										<p>{{post.content | limitTo:50}}...</p>
+										<span>(Tags) {{post.tags | limitTo:10}}</span>
+										<!-- <p class="fa fa-comment push-left"> {{post.comments.length}}
+											</p>
+											<p class="fa fa-heart push-right"> {{post.likes}}
+											</p> -->
+									</li>
+									<div class="pull-right" style="padding-top: 20px; ">
+										<button class="btn btn-info" ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+											Previous
+										</button>
+
+										Page {{currentPage+1}} of {{numberOfPages()}}
+
+										<button class="btn btn-info" ng-disabled="currentPage >= data.length/pageSize - 1" ng-click="currentPage=currentPage+1">
+											Next
+										</button>
+									</div>
+								</ul>
+
+								<div class="post" ng-repeat="post in blog.posts | startFrom:currentPage*pageSize | limitTo:pageSize" ng-show="blog.isSelected($index)">
+									<div>
+
+										<h2>{{post.title}}</h2> 
+									
+										<img src="{{post.image}}" style=" height:500px;width:1500px" />
+										<br>
+										<cite>by {{post.author}} on {{post.datecreated | date}}</cite>
+										<div ng-show="keycode" class="btn-group btn-group-sm pull-right" role="group" aria-label="Small button group" style="padding-bottom: 10px;padding-top: 10px;">
+											<button type="button" class="btn btn-danger " ng-click="deletenews()"><i class="fa fa-times-circle"></i></button>
+											<!-- <button type="button" class="btn btn-secondary" disabled>::</button>
+											<button type="button" class="btn btn-info" ng-click="updatenews();"><i class="fa fa-minus-circle"></i></button> -->
+										  </div><br>
+										<span ng-show="keycode">Key code::<input  type="text" ng-value="{{post.datecreated}}"/></span>
+										<div class="post-body">
+											<p>
+												{{post.content}}
+											</p>
+
+											<div class="blog-tags">
+												<h5>Tags :</h5>
+												<a href="#">
+													<i class="fa fa-tag"></i>{{post.tags}}</a>
+											</div>
+											<div class="sharethis-inline-share-buttons"></div>
+
+
+										</div>
+
+
+									</div>
+								</div>
+
+
+
+
+
+								<div class="post" ng-show="blog.isSelected('new')">
+									<h2>News Writer</h2>
+
+									<form name="postForm" ng-submit="blog.addPost()" novalidate>
+										<label for="">Article Title</label>
+										<input type="text" id="title" />
+										<label for="">Article Content</label>
+										<textarea id="content" cols="50" rows="10"></textarea>
+										<label for="">Featured Image URL</label>
+										<input type="file" id="image" required accept="image/x-png,image/jpeg" />
+										<label for="">by:</label>
+										<input type="text" id="author" required/>
+										<label for="">tags:</label>
+										<input type="text" id="tags" required/>
+										<br>
+										<input type="submit" value="Save" class="btn btn-info btn-lg pull-right"/>
+									</form>
+
+								</div>
+
+							
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+			</body>
+
+
+
+
+
+
+
+		</div>
+		<!-- /Row -->
+
+
+		<!-- /Container -->
+
+	</div>
+	<!-- /Blog -->
+
+	<!-- Footer -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer logo -->
+					<div class="footer-logo">
+						<a href="index.html">
+							<img src="img/logo-alt.png" alt="logo">
+						</a>
+					</div>
+					<!-- /footer logo -->
+
+					<!-- footer follow -->
+					<ul class="footer-follow">
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-google-plus"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-linkedin"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-youtube"></i>
+							</a>
+						</li>
+					</ul>
+					<!-- /footer follow -->
+
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						<p>Copyright © 2018. All Rights Reserved. Bicol Idol FM
+					</div>
+					<!-- /footer copyright -->
+
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</footer>
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script src='js/ang.js'></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/news.js"></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-animate.js'></script>
+	<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/110131/responsive.js'></script>
+	<script src="//platform-api.sharethis.com/js/sharethis.js#property="></script>
+
+</body>
+
+</html>
