@@ -37,11 +37,11 @@
 	<![endif]-->
 </head>
 
-<body class="body" ng-app="newsApp" ng-controller="newsController"> 
+<body class="body " ng-app="newsApp" ng-controller="newsController">
 	<!-- Header -->
 	<header id="home">
 		<!-- Background Image -->
-		<div id="bg-img" class="bg-img" style="background-image: url('./img/0.jpg');">
+		<div id="bg-img" class="bg-img" style="background-image: url('./img/2.jpg');">
 			<div class="overlay"></div>
 		</div>
 		<!-- /Background Image -->
@@ -52,7 +52,7 @@
 
 				<div class="navbar-header">
 					<!-- Logo -->
-					<div class="navbar-brand">
+					<div class="navbar-brand" style="height: 90px;">
 						<a href="index.html">
 							<img class="logo" src="img/logo.png" alt="logo">
 							<img class="logo-alt" src="img/logo-alt.png" alt="logo">
@@ -68,33 +68,51 @@
 				</div>
 
 				<!--  Main navigation  -->
-				<ul class="main-nav nav navbar-nav navbar-right">
+				<ul class="main-nav nav navbar-nav navbar-right uldaw">
+
 					<li>
-						<a href="#home">Home</a>
-					</li>
-					<li>
-						<a href="#live">Live
-							<font color="#ef2c25" class="blink"> ( &#10752; )</font>
+						<a href="#home">
+							<font size="4px">Home</font>
 						</a>
 					</li>
 					<li>
-						<a href="#news">News</a>
+						<a href="#live">
+							<font size="4px">Live
+								<font color="#ef2c25" class="blink"> ( &#10752; )</font>
+							</font>
+						</a>
 					</li>
 					<li>
-						<a href="#service">Services</a>
+						<a href="#news">
+							<font size="4px">News</font>
+						</a>
 					</li>
 					<li>
-						<a href="#pricing">Advertise w/ Us</a>
+						<a href="#service">
+							<font size="4px">Services</font>
+						</a>
 					</li>
 					<li>
-						<a href="#team">Idols</a>
+						<a href="#pricing">
+							<font size="4px">Advertise w/ Us</font>
+						</a>
 					</li>
 					<li>
-						<a href="#about">About</a>
+						<a href="#team">
+							<font size="4px">Idols</font>
+						</a>
 					</li>
 					<li>
-						<a href="#contact">Contact</a>
+						<a href="#about">
+							<font size="4px">About</font>
+						</a>
 					</li>
+					<li>
+						<a href="#contact">
+							<font size="4px">Contact</font>
+						</a>
+					</li>
+
 				</ul>
 				<!-- /Main navigation -->
 
@@ -168,17 +186,17 @@
 
 		<!-- Container -->
 
-		<div class="container">
+		<div class="container ">
 
-			<div class="row">
+			<div class="row ">
 
-				<div class="vimeo-wrapper clearfix">
+				<div class="vimeo-wrapper clearfix ">
 					<div class="vimeo-video-1 vimeo-standard">
 						<iframe src="https://www.ustream.tv/embed/21796746?html5ui=1&volume=0&autoplay=true" frameborder="0" webkitallowfullscreen
 						    mozallowfullscreen allowfullscreen align="middle" seamless></iframe>
 					</div>
 					<!-- <h4 style="color: aliceblue; float:right;">89.1 IDOL-FM PROGRAM SCHEDULE</h4> -->
-					<div id="exTab1" class="container vimeo-video-2 vimeo-standard2 panel panel-default program" style="border-radius:0; opacity: 0.8;">
+					<div id="exTab1" class="container vimeo-video-2 vimeo-standard2 panel panel-default program " style="border-radius:0; opacity: 0.8;">
 						<ul class="nav nav-pills">
 							<li class="active">
 								<a href="#1a" data-toggle="tab">Sunday</a>
@@ -194,8 +212,8 @@
 							</li>
 						</ul>
 
-						<div class="tab-content clearfix">
-							<div class="tab-pane active" id="1a">
+						<div class="tab-content clearfix ">
+							<div class="tab-pane active " id="1a">
 								<table class="table">
 									<thead>
 										<tr>
@@ -740,21 +758,20 @@
 							<h4>
 								<a href="news.html">{{new2t|limitTo:50}}...</a>
 							</h4>
-							<p>{{new2c|limitTo:80}}							
-									<a class="label label-primary" href="news.html">Read More...</a>
+							<p>{{new2c|limitTo:80}}
+								<a class="label label-primary" href="news.html">Read More...</a>
 							</p>
 						</div>
 					</div>
 					<!-- End Item -->
 
 					<div class="item">
-						<img src="{{new3img}}"
-						    style="width: 760px; height:400px;">
+						<img src="{{new3img}}" style="width: 760px; height:400px;">
 						<div class="carousel-caption">
 							<h4>
 								<a href="news.html">{{new3t|limitTo:50}}...</a>
 							</h4>
-							<p>{{new3c|limitTo:80}}	
+							<p>{{new3c|limitTo:80}}
 								<a class="label label-primary" href="news.html">Read More...</a>
 							</p>
 						</div>
@@ -777,8 +794,7 @@
 					<!-- End Item -->
 
 					<div class="item">
-						<img src="{{new5img}}"
-						    style="width: 760px; height:400px;">
+						<img src="{{new5img}}" style="width: 760px; height:400px;">
 						<div class="carousel-caption">
 							<h4>
 								<a href="news.html">{{new5t|limitTo:50}}...</a>
@@ -797,19 +813,29 @@
 
 				<ul class="list-group col-sm-4">
 					<li data-target="#mcl" data-slide-to="0" class="list-group-item active">
-						<h4>{{new1t|limitTo:40}}..<a class="label label-primary pull-right" href="news.html">More...</a></h4>
+						<h4>{{new1t|limitTo:40}}..
+							<a class="label label-primary pull-right" href="news.html">More...</a>
+						</h4>
 					</li>
 					<li data-target="#mcl" data-slide-to="1" class="list-group-item">
-						<h4>{{new2t|limitTo:40}}..<a class="label label-primary pull-right" href="news.html">More...</a></h4>
+						<h4>{{new2t|limitTo:40}}..
+							<a class="label label-primary pull-right" href="news.html">More...</a>
+						</h4>
 					</li>
 					<li data-target="#mcl" data-slide-to="2" class="list-group-item">
-						<h4>{{new3t|limitTo:40}}..<a class="label label-primary pull-right" href="news.html">More...</a></h4>
+						<h4>{{new3t|limitTo:40}}..
+							<a class="label label-primary pull-right" href="news.html">More...</a>
+						</h4>
 					</li>
 					<li data-target="#mcl" data-slide-to="3" class="list-group-item">
-						<h4>{{new4t|limitTo:40}}..<a class="label label-primary pull-right" href="news.html">More...</a></h4>
+						<h4>{{new4t|limitTo:40}}..
+							<a class="label label-primary pull-right" href="news.html">More...</a>
+						</h4>
 					</li>
 					<li data-target="#mcl" data-slide-to="4" class="list-group-item">
-						<h4>{{new5t|limitTo:40}}..<a class="label label-primary pull-right" href="news.html">More...</a></h4>
+						<h4>{{new5t|limitTo:40}}..
+							<a class="label label-primary pull-right" href="news.html">More...</a>
+						</h4>
 					</li>
 				</ul>
 
@@ -1125,7 +1151,7 @@
 				<div class="col-sm-4">
 					<div class="team">
 						<div class="team-img">
-							<img class="img-responsive" src="./img/team1.jpg" alt="">
+							<img class="img-responsive" src="./img/IMG_0691.jpg" alt="">
 							<div class="overlay">
 								<div class="team-social">
 									<a href="#">
@@ -1141,8 +1167,8 @@
 							</div>
 						</div>
 						<div class="team-content">
-							<h3>John Doe</h3>
-							<span>Web Designer</span>
+							<h3>IDOL KEN</h3>
+							<span>SM/DJ</span>
 						</div>
 					</div>
 				</div>
@@ -1152,7 +1178,7 @@
 				<div class="col-sm-4">
 					<div class="team">
 						<div class="team-img">
-							<img class="img-responsive" src="./img/team2.jpg" alt="">
+							<img class="img-responsive" src="./img/IMG_0639.jpg" alt="">
 							<div class="overlay">
 								<div class="team-social">
 									<a href="#">
@@ -1168,8 +1194,8 @@
 							</div>
 						</div>
 						<div class="team-content">
-							<h3>John Doe</h3>
-							<span>Web Designer</span>
+							<h3>IDOL NESS</h3>
+							<span>DJ</span>
 						</div>
 					</div>
 				</div>
@@ -1179,7 +1205,7 @@
 				<div class="col-sm-4">
 					<div class="team">
 						<div class="team-img">
-							<img class="img-responsive" src="./img/team3.jpg" alt="">
+							<img class="img-responsive" src="./img/IMG_0596.jpg" alt="">
 							<div class="overlay">
 								<div class="team-social">
 									<a href="#">
@@ -1195,12 +1221,498 @@
 							</div>
 						</div>
 						<div class="team-content">
-							<h3>John Doe</h3>
-							<span>Web Designer</span>
+							<h3>IDOL COP</h3>
+							<span>DJ</span>
 						</div>
 					</div>
 				</div>
 				<!-- /team -->
+
+				<!-- team -->
+				<div class="col-sm-3">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/IMG_0656.jpg" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-google-plus"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>IDOL NARDO</h3>
+							<span>DJ</span>
+						</div>
+					</div>
+				</div>
+				<!-- /team -->
+
+				<!-- team -->
+				<div class="col-sm-3">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/IMG_0663.jpg" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-google-plus"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>IDOL NHYL</h3>
+							<span>DJ</span>
+						</div>
+					</div>
+				</div>
+				<!-- /team -->
+
+				<!-- team -->
+				<div class="col-sm-3">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/IMG_0669-2-2.jpg" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-google-plus"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>IDOL JEPOY</h3>
+							<span>DJ</span>
+						</div>
+					</div>
+				</div>
+				<!-- /team -->
+
+				<!-- team -->
+				<div class="col-sm-3">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/IMG_0651.jpg" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-google-plus"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>IDOL JC</h3>
+							<span>DJ</span>
+						</div>
+					</div>
+				</div>
+				<!-- /team -->
+
+				<!-- team -->
+				<div class="col-sm-3">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/IMG_0911.jpg" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-google-plus"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>IDOL ECHO</h3>
+							<span>I.T</span>
+						</div>
+					</div>
+				</div>
+				<!-- /team -->
+
+				<!-- team -->
+				<div class="col-sm-3">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/IMG_0635.jpg" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-google-plus"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>IDOL PETER</h3>
+							<span>DJ</span>
+						</div>
+					</div>
+				</div>
+				<!-- /team -->
+
+				<!-- team -->
+				<div class="col-sm-3">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/IMG_0627.jpg" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-google-plus"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>IDOL REIGN</h3>
+							<span>DJ</span>
+						</div>
+					</div>
+				</div>
+				<!-- /team -->
+
+				<!-- team -->
+				<div class="col-sm-3">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/IMG_0630.jpg" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-google-plus"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>IDOL JORDAN</h3>
+							<span>JOURNALIST</span>
+						</div>
+					</div>
+				</div>
+				<!-- /team -->
+
+				<!-- team -->
+				<div class="col-sm-3">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/IMG_2527.jpg" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-google-plus"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>IDOL BOB</h3>
+							<span>JOURNALIST</span>
+						</div>
+					</div>
+				</div>
+				<!-- /team -->
+
+					<!-- team -->
+					<div class="col-sm-3">
+						<div class="team">
+							<div class="team-img">
+								<img class="img-responsive" src="./img/IMG_2550.jpg" alt="">
+								<div class="overlay">
+									<div class="team-social">
+										<a href="#">
+											<i class="fa fa-facebook"></i>
+										</a>
+										<a href="#">
+											<i class="fa fa-google-plus"></i>
+										</a>
+										<a href="#">
+											<i class="fa fa-twitter"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="team-content">
+								<h3>IDOL JO</h3>
+								<span>JOURNALIST</span>
+							</div>
+						</div>
+					</div>
+					<!-- /team -->
+
+						<!-- team -->
+						<div class="col-sm-3">
+							<div class="team">
+								<div class="team-img">
+									<img class="img-responsive" src="./img/IMG_0625.jpg" alt="">
+									<div class="overlay">
+										<div class="team-social">
+											<a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-google-plus"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="team-content">
+									<h3>IDOL JUN</h3>
+									<span>JOURNALIST</span>
+								</div>
+							</div>
+						</div>
+						<!-- /team -->
+
+						<!-- team -->
+						<div class="col-sm-3">
+							<div class="team">
+								<div class="team-img">
+									<img class="img-responsive" src="./img/IMG_0838.jpg" alt="">
+									<div class="overlay">
+										<div class="team-social">
+											<a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-google-plus"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="team-content">
+									<h3>IDOL 1</h3>
+									<span>REPORTER</span>
+								</div>
+							</div>
+						</div>
+						<!-- /team -->
+
+						<!-- team -->
+						<div class="col-sm-2">
+							<div class="team">
+								<div class="team-img">
+									<img class="img-responsive" src="./img/IMG_0844.jpg" alt="">
+									<div class="overlay">
+										<div class="team-social">
+											<a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-google-plus"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="team-content">
+									<h3>IDOL 1</h3>
+									<span>REPORTER</span>
+								</div>
+							</div>
+						</div>
+						<!-- /team -->
+
+						<!-- team -->
+						<div class="col-sm-2">
+							<div class="team">
+								<div class="team-img">
+									<img class="img-responsive" src="./img/IMG_0847.jpg" alt="">
+									<div class="overlay">
+										<div class="team-social">
+											<a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-google-plus"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="team-content">
+									<h3>IDOL 1</h3>
+									<span>REPORTER</span>
+								</div>
+							</div>
+						</div>
+						<!-- /team -->
+
+						<!-- team -->
+						<div class="col-sm-2">
+							<div class="team">
+								<div class="team-img">
+									<img class="img-responsive" src="./img/IMG_0862.jpg" alt="">
+									<div class="overlay">
+										<div class="team-social">
+											<a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-google-plus"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="team-content">
+									<h3>IDOL 1</h3>
+									<span>REPORTER</span>
+								</div>
+							</div>
+						</div>
+						<!-- /team -->
+
+							<!-- team -->
+							<div class="col-sm-2">
+								<div class="team">
+									<div class="team-img">
+										<img class="img-responsive" src="./img/IMG_0870.jpg" alt="">
+										<div class="overlay">
+											<div class="team-social">
+												<a href="#">
+													<i class="fa fa-facebook"></i>
+												</a>
+												<a href="#">
+													<i class="fa fa-google-plus"></i>
+												</a>
+												<a href="#">
+													<i class="fa fa-twitter"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="team-content">
+										<h3>IDOL 1</h3>
+										<span>REPORTER</span>
+									</div>
+								</div>
+							</div>
+							<!-- /team -->
+
+							<!-- team -->
+							<div class="col-sm-2">
+								<div class="team">
+									<div class="team-img">
+										<img class="img-responsive" src="./img/IMG_0881.jpg" alt="">
+										<div class="overlay">
+											<div class="team-social">
+												<a href="#">
+													<i class="fa fa-facebook"></i>
+												</a>
+												<a href="#">
+													<i class="fa fa-google-plus"></i>
+												</a>
+												<a href="#">
+													<i class="fa fa-twitter"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="team-content">
+										<h3>IDOL 1</h3>
+										<span>REPORTER</span>
+									</div>
+								</div>
+							</div>
+							<!-- /team -->
+
+							<!-- team -->
+							<div class="col-sm-2">
+								<div class="team">
+									<div class="team-img">
+										<img class="img-responsive" src="./img/IMG_0891.jpg" alt="">
+										<div class="overlay">
+											<div class="team-social">
+												<a href="#">
+													<i class="fa fa-facebook"></i>
+												</a>
+												<a href="#">
+													<i class="fa fa-google-plus"></i>
+												</a>
+												<a href="#">
+													<i class="fa fa-twitter"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="team-content">
+										<h3>IDOL 1</h3>
+										<span>REPORTER</span>
+									</div>
+								</div>
+							</div>
+							<!-- /team -->
 
 			</div>
 			<!-- /Row -->
@@ -1559,27 +2071,28 @@
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<div class="fb-customerchat"
-	page_id="1528969877413056"
-	minimized="true">
-   </div>
-   <script>
-	 window.fbAsyncInit = function() {
-	   FB.init({
-		 appId            : '217206528935170',
-		 autoLogAppEvents : true,
-		 xfbml            : true,
-		 version          : 'v2.11'
-	   });
-	 };
-   (function(d, s, id){
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) {return;}
-		js = d.createElement(s); js.id = id;
-		js.src = "https://connect.facebook.net/en_US/sdk.js";
-		fjs.parentNode.insertBefore(js, fjs);
-	  }(document, 'script', 'facebook-jssdk'));
-   </script>
+	<div class="fb-customerchat" page_id="1528969877413056" minimized="true">
+	</div>
+	<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '217206528935170',
+				autoLogAppEvents: true,
+				xfbml: true,
+				version: 'v2.11'
+			});
+		};
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "https://connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 </body>
 
 </html>

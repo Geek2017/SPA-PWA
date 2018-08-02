@@ -280,7 +280,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .navbar-brand .logo, .navbar-brand .logo-alt {
-    max-height: 50px;
+    max-height: 90px;
     display: block;
 }
 
@@ -696,12 +696,26 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /* -- nav btn collapse -- */
 
+.uldaw{
+    margin-top: 19px; 
+    margin-right: 10px;
+}
+
+@media (max-width:767px) {
+    .uldaw{
+        margin-top: 0px; 
+        margin-right: 0px;
+    }
+
+    }
+
+
 .nav-collapse {
     position: relative;
     float: right;
     width: 40px;
     height: 40px;
-    margin-top: 5px;
+    margin-top: 25px;
     margin-right: 5px;
     cursor: pointer;
     z-index: 99999;
@@ -1823,7 +1837,7 @@ background: #428bca;
 }
 
 .footer-logo>a>img {
-    max-height: 80px;
+    max-height: 120px;
 }
 
 .footer-follow {
@@ -2161,7 +2175,16 @@ background: #428bca;
   }
   
  
-  
-  
-  
+.prog,body::-webkit-scrollbar {
+    width: 0.4em;
+}
+ 
+.prog,body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.prog,body::-webkit-scrollbar-thumb {
+  background-color: #6195FF;
+  outline: 1px transparent white
+}
   
