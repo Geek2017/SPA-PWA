@@ -2188,3 +2188,7 @@ background: #428bca;
   outline: 1px transparent white
 }
   
+.imgresponsive {
+    width: 100%;
+    height: auto;
+}

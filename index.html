@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Bicol Idol 89.1</title>
+	<title>Bicol-Idol</title>
 	<link rel="icon" href="img/icon.png" type="image/png">
 
 	<!-- Google font -->
@@ -28,7 +28,7 @@
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
-
+  
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -129,7 +129,7 @@
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
 							<h1 class="white-text">Sa Bicol, Idol</h1>
-							<p class="white-text">Making a Diference, In service to Bicolandia</p>
+							<p class="white-text">Making a Difference In service to Bicolandia</p>
 							<ul class="footer-follow">
 								<li>
 									<a href="https://www.facebook.com/bicolidol891/">
@@ -814,27 +814,27 @@
 				<ul class="list-group col-sm-4">
 					<li data-target="#mcl" data-slide-to="0" class="list-group-item active">
 						<h4>{{new1t|limitTo:40}}..
-							<a class="label label-primary pull-right" href="news.html">More...</a>
+							<button id="newsredirect" class="label label-primary pull-right">More...</button>
 						</h4>
 					</li>
 					<li data-target="#mcl" data-slide-to="1" class="list-group-item">
 						<h4>{{new2t|limitTo:40}}..
-							<a class="label label-primary pull-right" href="news.html">More...</a>
+							<button id="newsredirect" class="label label-primary pull-right">More...</button>
 						</h4>
 					</li>
 					<li data-target="#mcl" data-slide-to="2" class="list-group-item">
 						<h4>{{new3t|limitTo:40}}..
-							<a class="label label-primary pull-right" href="news.html">More...</a>
+							<button id="newsredirect" class="label label-primary pull-right">More...</button>
 						</h4>
 					</li>
 					<li data-target="#mcl" data-slide-to="3" class="list-group-item">
 						<h4>{{new4t|limitTo:40}}..
-							<a class="label label-primary pull-right" href="news.html">More...</a>
+							<button id="newsredirect" class="label label-primary pull-right">More...</button>
 						</h4>
 					</li>
 					<li data-target="#mcl" data-slide-to="4" class="list-group-item">
 						<h4>{{new5t|limitTo:40}}..
-							<a class="label label-primary pull-right" href="news.html">More...</a>
+							<button id="newsredirect" class="label label-primary pull-right">More...</button>
 						</h4>
 					</li>
 				</ul>
@@ -881,9 +881,9 @@
 					<div class="service">
 						<i class="fa fa-diamond"></i>
 						<h3>App Development</h3>
-						<p>Elevate your business by egaging to the trend to 21th century. weather you need a business,
+						<p>Elevate your business by engaging to the trend to 21th century. whether you need a business,
 							<span class="more-text hide">
-								Portfolio, Corporarete or even Goverment website we got you covered, or better yet lets automate your business by Developing
+								Portfolio, Corporate or even Government website we got you covered, or better yet lets automate your business by Developing
 								your very own concept of mobile app or system. what ever your tech. need are, our services is tailored for your business.</span>
 							<a data-show="more" more-collapse="false" href="/" class="showmore"> more</a>
 						</p>
@@ -896,8 +896,8 @@
 					<div class="service">
 						<i class="fa fa-rocket"></i>
 						<h3>Graphic Design</h3>
-						<p>Wanna create an stunning graphic content, backdrop design, tarpulin ads material or
-							<span class="more-text hide"> even you want to coceptualize your corposate logo talk to us we got you back</span>
+						<p>Wanna create an stunning graphic content, backdrop design, tarpaulin ads material or
+							<span class="more-text hide"> even you want to conceptualize your corporate logo talk to us we got your back</span>
 							<a data-show="more" more-collapse="false" href="/" class="showmore"> more</a>
 						</p>
 					</div>
@@ -949,7 +949,7 @@
 						<i class="fa fa-flask"></i>
 						<h3>Brand Design</h3>
 						<p>Lets make your brand that will be resonate with everyone lets take the leap now
-							<span class="more-text hide">your brand is the most critical aspect of your business help us helpy you contact us now.</span>
+							<span class="more-text hide">your brand is the most critical aspect of your business help us help you contact us now.!</span>
 							<a data-show="more" more-collapse="false" href="/" class="showmore"> more</a>
 						</p>
 					</div>
@@ -977,6 +977,25 @@
 		<!-- Container -->
 		<div class="container">
 
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" role="dialog">
+				  <div class="modal-dialog modal-sm">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Download</h4>
+					  </div>
+					  <div class="modal-body">
+						<p>To download Quote pls. do authorize via facebook.</p>
+						<a href="javascript:void(0);" id="fbLink"><img  class="img-rounded imgresponsive" alt="Cinque Terre"  src="img/fblogin.png"/></a>
+						<a id="hidme" class="btn btn-info btn-block"  href="img/qoute.pdf" download>Download Qoute</a>
+					  </div>
+					  <div class="modal-footer">
+					  </div>
+					</div>
+				  </div>
+				</div>
+		
 			<!-- Row -->
 			<div class="row">
 
@@ -1014,7 +1033,7 @@
 							</li>
 						</ul>
 						<div class="price-btn">
-							<button class="outline-btn">Get Quote</button>
+							<button class="outline-btn" data-toggle="modal" data-target="#myModal">Get Quote</button>
 						</div>
 					</div>
 				</div>
@@ -1048,7 +1067,7 @@
 							</li>
 						</ul>
 						<div class="price-btn">
-							<button class="outline-btn">Get Quate</button>
+							<button class="outline-btn" data-toggle="modal" data-target="#myModal">Get Quote</button>
 						</div>
 					</div>
 				</div>
@@ -1082,7 +1101,7 @@
 							</li>
 						</ul>
 						<div class="price-btn">
-							<button class="outline-btn">Get Quate</button>
+							<button class="outline-btn" data-toggle="modal" data-target="#myModal">Get Quote</button>
 						</div>
 					</div>
 				</div>
@@ -1116,7 +1135,7 @@
 							</li>
 						</ul>
 						<div class="price-btn">
-							<button class="outline-btn">Get Quate</button>
+							<button class="outline-btn" data-toggle="modal" data-target="#myModal">Get Quote</button>
 						</div>
 					</div>
 				</div>
@@ -1143,7 +1162,7 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">Our Team</h2>
+					<h2 class="title">Team Idol</h2>
 				</div>
 				<!-- /Section header -->
 
@@ -1168,7 +1187,7 @@
 						</div>
 						<div class="team-content">
 							<h3>IDOL KEN</h3>
-							<span>SM/DJ</span>
+							<span>STATION MANAGER/ANCHOR</span>
 						</div>
 					</div>
 				</div>
@@ -1195,7 +1214,7 @@
 						</div>
 						<div class="team-content">
 							<h3>IDOL NESS</h3>
-							<span>DJ</span>
+							<span>ADMIN/DJ</span>
 						</div>
 					</div>
 				</div>
@@ -1249,7 +1268,7 @@
 						</div>
 						<div class="team-content">
 							<h3>IDOL NARDO</h3>
-							<span>DJ</span>
+							<span>NEWS DIRECTOR/DJ</span>
 						</div>
 					</div>
 				</div>
@@ -1276,7 +1295,7 @@
 						</div>
 						<div class="team-content">
 							<h3>IDOL NHYL</h3>
-							<span>DJ</span>
+							<span>NEWS WRITER/DJ</span>
 						</div>
 					</div>
 				</div>
@@ -1286,7 +1305,7 @@
 				<div class="col-sm-3">
 					<div class="team">
 						<div class="team-img">
-							<img class="img-responsive" src="./img/IMG_0669-2-2.jpg" alt="">
+							<img class="img-responsive" src="./img/IMG_0627.jpg" alt="">
 							<div class="overlay">
 								<div class="team-social">
 									<a href="#">
@@ -1302,7 +1321,7 @@
 							</div>
 						</div>
 						<div class="team-content">
-							<h3>IDOL JEPOY</h3>
+							<h3>IDOL REIGN</h3>
 							<span>DJ</span>
 						</div>
 					</div>
@@ -1336,6 +1355,60 @@
 				</div>
 				<!-- /team -->
 
+	<!-- team -->
+	<div class="col-sm-3">
+		<div class="team">
+			<div class="team-img">
+				<img class="img-responsive" src="./img/IMG_0635.jpg" alt="">
+				<div class="overlay">
+					<div class="team-social">
+						<a href="#">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-google-plus"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="team-content">
+				<h3>IDOL MAKOL</h3>
+				<span>DJ</span>
+			</div>
+		</div>
+	</div>
+	<!-- /team -->
+
+	<!-- team -->
+	<div class="col-sm-3">
+		<div class="team">
+			<div class="team-img">
+				<img class="img-responsive" src="./img/IMG_0669-2-2.jpg" alt="">
+				<div class="overlay">
+					<div class="team-social">
+						<a href="#">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-google-plus"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="team-content">
+				<h3>IDOL JEPOY</h3>
+				<span>I.T</span>
+			</div>
+		</div>
+	</div>
+	<!-- /team -->
+
 				<!-- team -->
 				<div class="col-sm-3">
 					<div class="team">
@@ -1363,59 +1436,7 @@
 				</div>
 				<!-- /team -->
 
-				<!-- team -->
-				<div class="col-sm-3">
-					<div class="team">
-						<div class="team-img">
-							<img class="img-responsive" src="./img/IMG_0635.jpg" alt="">
-							<div class="overlay">
-								<div class="team-social">
-									<a href="#">
-										<i class="fa fa-facebook"></i>
-									</a>
-									<a href="#">
-										<i class="fa fa-google-plus"></i>
-									</a>
-									<a href="#">
-										<i class="fa fa-twitter"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3>IDOL PETER</h3>
-							<span>DJ</span>
-						</div>
-					</div>
-				</div>
-				<!-- /team -->
-
-				<!-- team -->
-				<div class="col-sm-3">
-					<div class="team">
-						<div class="team-img">
-							<img class="img-responsive" src="./img/IMG_0627.jpg" alt="">
-							<div class="overlay">
-								<div class="team-social">
-									<a href="#">
-										<i class="fa fa-facebook"></i>
-									</a>
-									<a href="#">
-										<i class="fa fa-google-plus"></i>
-									</a>
-									<a href="#">
-										<i class="fa fa-twitter"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3>IDOL REIGN</h3>
-							<span>DJ</span>
-						</div>
-					</div>
-				</div>
-				<!-- /team -->
+			
 
 				<!-- team -->
 				<div class="col-sm-3">
@@ -1545,7 +1566,7 @@
 									</div>
 								</div>
 								<div class="team-content">
-									<h3>IDOL 1</h3>
+									<h3>IDOL CHARLENE</h3>
 									<span>REPORTER</span>
 								</div>
 							</div>
@@ -1572,7 +1593,7 @@
 									</div>
 								</div>
 								<div class="team-content">
-									<h3>IDOL 1</h3>
+									<h3>IDOL JOLLY</h3>
 									<span>REPORTER</span>
 								</div>
 							</div>
@@ -1599,7 +1620,7 @@
 									</div>
 								</div>
 								<div class="team-content">
-									<h3>IDOL 1</h3>
+									<h3>IDOL ERVIN</h3>
 									<span>REPORTER</span>
 								</div>
 							</div>
@@ -1626,7 +1647,7 @@
 									</div>
 								</div>
 								<div class="team-content">
-									<h3>IDOL 1</h3>
+									<h3>IDOL CHARDY</h3>
 									<span>REPORTER</span>
 								</div>
 							</div>
@@ -1653,7 +1674,7 @@
 										</div>
 									</div>
 									<div class="team-content">
-										<h3>IDOL 1</h3>
+										<h3>IDOL &nbspNIÑO</h3>
 										<span>REPORTER</span>
 									</div>
 								</div>
@@ -1680,7 +1701,7 @@
 										</div>
 									</div>
 									<div class="team-content">
-										<h3>IDOL 1</h3>
+										<h3>IDOL &nbspRALPH</h3>
 										<span>REPORTER</span>
 									</div>
 								</div>
@@ -1707,7 +1728,7 @@
 										</div>
 									</div>
 									<div class="team-content">
-										<h3>IDOL 1</h3>
+										<h3>IDOL LITO</h3>
 										<span>REPORTER</span>
 									</div>
 								</div>
@@ -1742,7 +1763,7 @@
 						<p class="col-md-12 about">89.1 Bicol Idol FM is the hottest radio station on the rise at live broadcast on our dial at 89.1 FM in Legazpi City,
 							Albay. We pride ourselves and please our valued listeners with programs on latest news, unbiased public affairs program
 							and queuing wide variety of music both old and new. BEST VARIETY, COOLEST HITS. 89.1 Bicol Idol FM offers a space
-							for to enjoy new and all-time favorite music.
+							for you to enjoy new and all-time favorite music.
 
 					</div>
 				</div>
