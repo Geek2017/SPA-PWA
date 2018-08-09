@@ -207,7 +207,7 @@
 							
 							<div class="row">
 								<ul class="post-grid" ng-show="blog.isSelected('blog')">
-									<li ng-repeat="post in blog.posts |filter:searchenews | startFrom:currentPage*pageSize | limitTo:pageSize  "  class="col-s-4" ng-class="{ 'reset-s' : $index%3==0 }"
+									<li ng-repeat="post in blog.posts| orderBy |filter:searchenews | startFrom:currentPage*pageSize | limitTo:pageSize  "  class="col-s-4" ng-class="{ 'reset-s' : $index%3==0 }"
 									    ng-click="blog.selectTab($index);">
 										<span>
 											<img src="{{post.image}}" style=" height:200px;width:300px">
@@ -233,7 +233,7 @@
 									</div>
 								</ul>
 
-								<div class="post" ng-repeat="post in blog.posts | startFrom:currentPage*pageSize | limitTo:pageSize" ng-show="blog.isSelected($index)">
+								<div class="post" ng-repeat="post in blog.posts| orderBy | startFrom:currentPage*pageSize | limitTo:pageSize" ng-show="blog.isSelected($index)">
 									<div>
 
 										<h2>{{post.title}}</h2> 
