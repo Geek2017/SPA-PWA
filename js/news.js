@@ -111,7 +111,18 @@
           }
       }).success(function(response){
               console.log(response)
-              window.location = 'news.html';
+              
+
+              $http.get('db/data.json').success(function(data){
+                blog.posts = data;
+                blog.tab = 'blog';
+                $('#title').val('');
+                $('#content').val('');
+                $('#image').val('');
+                $('#author').val('');
+                $('#tags').val('');
+              });
+              
           });
       } else {
         window.location = 'news.html';
