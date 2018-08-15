@@ -53,25 +53,36 @@
     $scope.pageSize = 6;
    
     $scope.data=blog.posts;
+
+    console.log($scope.data.length);
    
+   var v0 = $scope.data.length;   
 
-     $scope.new1t=$scope.data[0].title
-     $scope.new2t=$scope.data[1].title
-     $scope.new3t=$scope.data[2].title
-     $scope.new4t=$scope.data[3].title
-     $scope.new5t=$scope.data[4].title
+    var v1=v0-1;
+    var v2=v1-1;
+    var v3=v2-1;
+    var v4=v3-1;
+    var v5=v4-1;
 
-     $scope.new1img=$scope.data[0].image
-     $scope.new2img=$scope.data[1].image
-     $scope.new3img=$scope.data[2].image
-     $scope.new4img=$scope.data[3].image
-     $scope.new5img=$scope.data[4].image
+    // console.log(v1,"::",v2,"::",v3,"::",v4,"::",v5)
 
-     $scope.new1c=$scope.data[0].content
-     $scope.new2c=$scope.data[1].content
-     $scope.new3c=$scope.data[2].content
-     $scope.new4c=$scope.data[3].content
-     $scope.new5c=$scope.data[4].content
+     $scope.new1t=$scope.data[v1].title
+     $scope.new2t=$scope.data[v2].title
+     $scope.new3t=$scope.data[v3].title
+     $scope.new4t=$scope.data[v4].title
+     $scope.new5t=$scope.data[v5].title
+
+     $scope.new1img=$scope.data[v1].image
+     $scope.new2img=$scope.data[v2].image
+     $scope.new3img=$scope.data[v3].image
+     $scope.new4img=$scope.data[v4].image
+     $scope.new5img=$scope.data[v5].image
+
+     $scope.new1c=$scope.data[v1].content
+     $scope.new2c=$scope.data[v2].content
+     $scope.new3c=$scope.data[v3].content
+     $scope.new4c=$scope.data[v4].content
+     $scope.new5c=$scope.data[v5].content
 
 
 
