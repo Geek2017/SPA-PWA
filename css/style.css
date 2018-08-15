@@ -1315,7 +1315,7 @@ background: #428bca;
 
 .pricing .duration {
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     color: #10161A;
     -webkit-transition: 0.2s color;
